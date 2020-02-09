@@ -1,0 +1,289 @@
+/* ここから下に記載していく */
+@charset "utf-8";
+
+* {
+  box-sizing: border-box;
+}
+
+#site-box {
+  width: 1200px;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+  text-align: justify;
+}
+
+/* -----------
+    header 
+------------*/
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.logo {
+  margin-top: 15px;
+  margin-right: 200px; /* 画像を左に寄せる */
+}
+ul.header__nav {
+  display: flex;
+  margin-top: 10px;
+  margin-right: 30px;
+}
+.header__nav li {
+  margin-left: 60px;
+  font-size: 20px;
+}
+.header a {
+  text-decoration: none;
+}
+
+/* ----------------
+    mainvisual 
+ *---------------*/
+.mainvisual {
+  height: 400px;
+  background: url("../img/mainbg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.mainvisual__title {
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 200px;
+}
+.mainvisual__subtitle {
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* --------------
+   ABOUT 
+ *---------------*/
+.profile__title1 {
+  margin: 100px 0 20px;
+  font-size: 26px;
+  font-weight: bold;
+  color: chocolate;
+}
+h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.text1 {
+  line-height: 1.6;
+  font-size: 18px;
+}
+.imgbox {
+  display: flex;
+}
+.imgbox p img {
+  width: 101%;
+}
+
+/* --------------
+   COURSE 
+ *---------------*/
+.profile__title2 {
+  margin: 180px 0 30px;
+  font-size: 26px;
+  font-weight: bold;
+}
+.text2 {
+  line-height: 1.6;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+h3 {
+  font-size: 21px;
+  font-weight: bold;
+}
+.box1 {
+  display: flex;
+  align-items: center; /* テキストを上下の中央に置く */
+  text-align: left; /* テキストを左に揃える */
+  text-align: justify; /* テキストを整える */
+}
+.img1 {
+  width: 666px;
+  margin-right: 90px; /* 写真の右側を空ける */
+}
+.box2 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  text-align: left; /* テキストを左に揃える */
+  text-align: justify; /* テキストを整える */
+}
+.img2 {
+  width: 666px;
+  margin-left: 60px;
+}
+
+/* --------------
+   NEWS 
+ *---------------*/
+.profile__title3 {
+  margin: 190px 0 15px;
+  font-size: 26px;
+  font-weight: bold;
+}
+h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.news__list {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  margin: auto;
+}
+.news__eyecatch {
+  margin: 5px 0;
+}
+.news__contents {
+  text-align: left;
+  text-align: justify;
+  width: 300px;
+  line-height: 1.6;
+}
+/* .btn {
+  display: block;
+  width: 300px;
+  height: 20px;
+  margin: 40px 525px;
+  padding: 20px 0;
+  background-color: #f4d500;
+  color: #ffffff;
+  font-size: 22px;
+  text-align: center;
+  text-decoration: none;
+} */
+#NEWS .box {
+  display: block;
+  width: 300px;
+  height: 80px;
+  margin: 40px auto;
+  background-color: #f4d500;
+}
+.btn {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  font-size: 22px;
+  color: #fff;
+  text-align: center;
+  padding: 29px;
+}
+
+/* --------------
+   ACCESS 
+ *---------------*/
+.profile__title4 {
+  margin: 170px 0 15px;
+  font-size: 26px;
+  font-weight: bold;
+}
+h5 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+.txt {
+  margin: 30px;
+  text-align: left;
+  display: inline-block;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+/* ---------------
+   CONTACT
+ *---------------*/
+.profile__title5 {
+  margin: 150px 0 15px;
+  font-size: 26px;
+  font-weight: bold;
+}
+h6 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+/* form */
+.formbox {
+  padding: 50px 0;
+  font-size: 18px;
+  width: 600px;
+  margin: auto;
+}
+.formbox dl {
+  display: flex;
+  padding: 5px;
+}
+
+.formbox dl dt {
+  display: flex;
+  width: 230px;
+  padding: 10px 0;
+}
+.formbox dl dd {
+  padding: 10px 30px;
+  width: 370px;
+}
+.formbox dl dd span {
+  display: block;
+}
+.formbox dl dd input[type="text"] {
+  width: 100%;
+}
+.formbox dl dd textarea {
+  width: 100%;
+}
+
+/* btn */
+.submit {
+  width: 300px;
+  height: 80px;
+  margin: 40px auto;
+  background-color: #f4d500;
+}
+.submit input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  font-size: 22px;
+  color: #fff;
+}
+
+/* copyright */
+.box3 {
+  background-color: gray;
+  width: 100%;
+  height: 60px;
+  margin-top: 20px;
+  text-align: center;
+  padding-top: 22px;
+}
+.copy {
+  color: white;
+  font-size: 18px;
+}
